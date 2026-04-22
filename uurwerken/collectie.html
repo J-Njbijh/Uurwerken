@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collectie | Uurwerken</title>
+  <meta name="description" content="Onze volledige collectie van 1 op 1 replica horloges tot BP Swiss Made tot AAA+ Grade. Rolex, Patek Philippe, Audemars Piguet, Cartier, Richard Mille"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/jpeg" href="klokjes.jpg">
+</head>
+<body>
+
+<div id="topbar"></div>
+<div id="nav"></div>
+<div id="ticker"></div>
+
+<!-- PAGINA HERO -->
+<div class="pagina-hero">
+  <div class="pagina-hero-glow"></div>
+  <div class="sectie-label fade-in">Collectie</div>
+  <h1 class="sectie-titel fade-in page-title-large">Alle horloges</h1>
+  <div class="sectie-lijn fade-in"></div>
+  <p class="fade-in page-copy-small">
+    Kies uit Super Clone, BP Swiss Made of AAA+ kwaliteit. Filter op merk, kwaliteit of prijs.
+  </p>
+</div>
+
+<!-- FILTER SECTIE -->
+<div class="filter-sectie">
+  <!-- Categorie tabs -->
+  <div class="filter-tabs">
+    <button class="filter-btn actief" data-filter="alles">Alles</button>
+    <button class="filter-btn" data-filter="superclone" id="tab-superclone">Super Clone</button>
+    <button class="filter-btn" data-filter="bp" id="tab-bp">BP Swiss Made</button>
+    <button class="filter-btn" data-filter="aaa" id="tab-aaa">AAA+</button>
+  </div>
+
+  <!-- Extra filteropties -->
+  <div class="filter-opties-balk">
+    <span class="filter-label">Filter:</span>
+
+    <select class="filter-select" id="filter-merk">
+      <option value="">Alle merken</option>
+      <option value="Rolex">Rolex</option>
+      <option value="Patek Philippe">Patek Philippe</option>
+      <option value="Audemars Piguet">Audemars Piguet</option>
+      <option value="Cartier">Cartier</option>
+      <option value="Richard Mille">Richard Mille</option>
+    </select>
+
+    <select class="filter-select" id="filter-prijs">
+      <option value="">Alle prijzen</option>
+      <option value="0-450">€0 – €450 (AAA+)</option>
+      <option value="450-900">€450 – €900 (BP Swiss Made)</option>
+      <option value="900-9999">€900+ (Super Clone)</option>
+    </select>
+
+    <select class="filter-select" id="filter-sortering">
+      <option value="standaard">Standaard</option>
+      <option value="naam-az">Naam A–Z</option>
+      <option value="naam-za">Naam Z–A</option>
+      <option value="prijs-laag">Prijs: laag → hoog</option>
+      <option value="prijs-hoog">Prijs: hoog → laag</option>
+    </select>
+
+    <input type="text" class="filter-zoek" id="filter-zoek" placeholder="Zoek op naam of merk…">
+
+    <button class="filter-reset" id="filter-reset-btn">× Wis alles</button>
+  </div>
+
+  <!-- Actieve filter pills -->
+  <div class="actieve-filters" id="actieve-filters"></div>
+</div>
+
+<!-- META BAR -->
+<div class="collectie-meta">
+  <div class="collectie-teller">
+    <span id="teller-getal">0</span> horloges gevonden
+  </div>
+</div>
+
+<!-- HORLOGE GRID -->
+<div class="bg-var-bg">
+  <div class="watches-grid" id="collectie-grid"></div>
+  <div class="geen-resultaten" id="geen-resultaten">Geen horloges gevonden voor dit filter.</div>
+</div>
+
+<!-- CTA ONDERIN -->
+<section class="sectie sectie--donker text-center">
+  <div class="sectie-label text-center">Niet gevonden wat je zoekt?</div>
+  <h2 class="sectie-titel text-center page-title-medium">Vraag via WhatsApp</h2>
+  <div class="sectie-lijn sectie-lijn--center"></div>
+  <p class="page-copy-small-narrow">
+    Wij hebben veel meer modellen op voorraad dan wat hier staat. Stuur een bericht en we helpen je verder — ook voor specifieke modellen op aanvraag.
+  </p>
+  <a class="btn-wa" href="https://wa.me/31684342980" target="_blank">WhatsApp ons direct</a>
+</section>
+
+<div id="footer"></div>
+
+<script src="watches.js"></script>
+<script src="components.js"></script>
+<script src="main.js"></script>
+<script src="collectie.js"></script>
+</body>
+</html>
